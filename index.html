@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista zakupów jQuery</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI (drag & drop) -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <h2 class="title">🛒 Lista zakupów</h2>
+
+    <div class="input-section">
+        <input type="text" id="produktInput" placeholder="Wpisz nazwę produktu">
+        <button id="dodajProdukt">Dodaj</button>
+    </div>
+
+    <div class="buttons-section">
+        <button id="usunOstatni">Usuń ostatni</button>
+        <button id="dodajPoczatek">Na początek</button>
+        <button id="dodajKoniec">Na koniec</button>
+        <button id="wyczyscListe">Wyczyść</button>
+        <button id="przywrocListe">Przywróć</button>
+        <button id="pokoloruj">Pokoloruj co drugi element</button>
+        <button id="sortuj">Sortuj A–Z</button>
+    </div>
+
+    <input type="text" id="filtrInput" placeholder="🔎 Filtruj produkty...">
+
+    <ul id="listaZakupow">
+        <li>Chleb</li>
+        <li>Mleko</li>
+        <li>Masło</li>
+    </ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
